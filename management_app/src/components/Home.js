@@ -14,7 +14,7 @@ const Home = () => {
   },[]);
   
   const getHomeDetail=()=>{
-    axios.get('http://localhost:4200/course/home',{
+    axios.get('https://management-app-backenedd.onrender.com/course/home',{
       headers:{
         Authorization:'Bearer '+localStorage.getItem('token')
       }

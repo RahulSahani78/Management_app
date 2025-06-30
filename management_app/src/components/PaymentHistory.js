@@ -9,7 +9,7 @@ getPaymentHistory();
   },[]);
   
   const getPaymentHistory=()=>{
-    axios.get('http://localhost:4200/fee/payment-history/',{
+    axios.get('https://management-app-backenedd.onrender.com/fee/payment-history/',{
       headers:{
         Authorization:'Bearer '+localStorage.getItem('token')
       }

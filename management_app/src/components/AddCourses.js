@@ -49,7 +49,7 @@ setLoading(true);
    
     
     if(location.state){
-      axios.put('http://localhost:4200/course/'+location.state.course._id,formData,{
+      axios.put('https://management-app-backenedd.onrender.com/course/'+location.state.course._id,formData,{
         headers:{
           Authorization:'Bearer '+localStorage.getItem('token')
         }
@@ -68,7 +68,7 @@ setLoading(true);
   
     }
     else{
-      axios.post('http://localhost:4200/course/add-course',formData,{
+      axios.post('https://management-app-backenedd.onrender.com/course/add-course',formData,{
         headers:{
           Authorization:'Bearer '+localStorage.getItem('token')
         }

@@ -13,7 +13,7 @@ const Students = () => {
 
   const getStudent = () => {
     axios
-      .get('http://localhost:4200/student/all-students', {
+      .get('https://management-app-backenedd.onrender.com/student/all-students', {
         headers: {
           Authorization: 'Bearer ' + localStorage.getItem('token'),
         },

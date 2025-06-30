@@ -18,7 +18,7 @@ const CollectFee = () => {
   },[])
 
   const getCourses=()=>{
-    axios.get('http://localhost:4200/course/all-course',{
+    axios.get('https://management-app-backenedd.onrender.com/course/all-course',{
       headers:{
         Authorization:'Bearer '+localStorage.getItem('token')
       }
@@ -36,7 +36,7 @@ const CollectFee = () => {
 const submitHandler=(e)=>{
   e.preventDefault();
   console.log(fullName,phone,amount,remark,courseId);
-  axios.post('http://localhost:4200/fee/add-fee',{
+  axios.post('https://management-app-backenedd.onrender.com/fee/add-fee',{
     fullName:fullName,
     amount:amount,
     phone:phone,

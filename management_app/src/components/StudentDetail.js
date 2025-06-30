@@ -13,7 +13,7 @@ const StudentDetail = () => {
         getStudentDetail();
     },[])
     const getStudentDetail=()=>{
-        axios.get('http://localhost:4200/student/student-detail/'+params.id,{
+        axios.get('https://management-app-backenedd.onrender.com/student/student-detail/'+params.id,{
           headers:{
             Authorization:'Bearer '+localStorage.getItem('token')
           }
@@ -36,7 +36,7 @@ const StudentDetail = () => {
       const deleteStudent=(studentId)=>{
         if(window.confirm('are you sure to delete ?? ')){
           
-          axios.delete('http://localhost:4200/student/'+studentId, {
+          axios.delete('https://management-app-backenedd.onrender.com/student/'+studentId, {
             headers: {
               Authorization: 'Bearer ' + localStorage.getItem('token'),
             },

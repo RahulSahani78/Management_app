@@ -11,7 +11,7 @@ const Courses = () => {
     getCourses();
   },[])
   const getCourses=()=>{
-    axios.get('http://localhost:4200/course/all-course',{
+    axios.get('https://management-app-backenedd.onrender.com/course/all-course',{
       headers:{
         Authorization:'Bearer '+localStorage.getItem('token')
       }

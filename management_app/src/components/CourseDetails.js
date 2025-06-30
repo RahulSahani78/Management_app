@@ -16,7 +16,7 @@ getCoursesDetail();
 
 
   const getCoursesDetail=()=>{
-    axios.get('http://localhost:4200/course/course-detail/'+params.id,{
+    axios.get('https://management-app-backenedd.onrender.com/course/course-detail/'+params.id,{
       headers:{
         Authorization:'Bearer '+localStorage.getItem('token')
       }
@@ -37,7 +37,7 @@ getCoursesDetail();
   const deleteCourse=(courseId)=>{
     if(window.confirm('are you sure to delete ?? ')){
       
-      axios.delete('http://localhost:4200/course/'+courseId, {
+      axios.delete('https://management-app-backenedd.onrender.com/course/'+courseId, {
         headers: {
           Authorization: 'Bearer ' + localStorage.getItem('token'),
         },

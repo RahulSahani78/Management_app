@@ -37,7 +37,7 @@ useEffect(()=>{
   }
 },[location])
 const getCourses=()=>{
-  axios.get('http://localhost:4200/course/all-course',{
+  axios.get('https://management-app-backenedd.onrender.com/course/all-course',{
     headers:{
       Authorization:'Bearer '+localStorage.getItem('token')
     }
@@ -67,7 +67,7 @@ setLoading(true);
     
     
  if(location.state){
-  axios.put('http://localhost:4200/student/'+location.state.student._id,formData,{
+  axios.put('https://management-app-backenedd.onrender.com/student/'+location.state.student._id,formData,{
     headers:{
       Authorization:'Bearer '+localStorage.getItem('token')
     }
@@ -85,7 +85,7 @@ setLoading(true);
   })
  }
  else{
-  axios.post('http://localhost:4200/student/add-student',formData,{
+  axios.post('https://management-app-backenedd.onrender.com/student/add-student',formData,{
     headers:{
       Authorization:'Bearer '+localStorage.getItem('token')
     }

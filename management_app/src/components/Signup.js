@@ -27,7 +27,7 @@ formData.append('password',password)
 formData.append('image',image);
 
 
-axios.post('http://localhost:4200/user/signup',formData)
+axios.post('https://management-app-backenedd.onrender.com/user/signup',formData)
 .then(res=>{
   setLoading(false);
   toast.success('your account is created')
