@@ -220,6 +220,8 @@ padding: 10px;
     flex-direction: row;
     gap: 2%;
     flex-wrap: wrap;
+    
+    
     /* justify-content: space-evenly; */
 
 }
@@ -247,6 +249,7 @@ height: 17vh;
 .course-price{
     font-size: 14px;
   text-align: center;
+ 
 
 }
 .course-detail-wrapper{
