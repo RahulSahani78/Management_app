@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "node server.js",
+    "postinstall": "npm rebuild bcrypt --build-from-source"
   },
   "keywords": [
     "rest",
@@ -14,7 +15,7 @@
   "author": "Rahul",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^5.1.1",
+    "bcryptjs": "^3.0.2",
     "body-parser": "^1.20.3",
     "cloudinary": "^2.5.1",
     "cors": "^2.8.5",
